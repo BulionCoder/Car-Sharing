@@ -26,9 +26,9 @@
             <nav>
                 <ul>
                     <li><a href="">home</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">service</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#service">service</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
 
@@ -47,13 +47,13 @@
                     <a class="btn--medium btn--white" href="#">Key features</a>
                 </div>
             </div>
-            <a href="#" class="btn--arrow" >
-                <img src="images/Icon%20Arrow%20Down.svg" alt="arrow">
-            </a>
         </div>
+        <a href="#blog" class="btn--arrow" >
+            <img src="images/Icon%20Arrow%20Down.svg" alt="arrow">
+        </a>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <div class="section-title">Blog</div>
             <div class="blog--wrapper">
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="service">
         <div class="container">
             <div class="section-title section-title-font-color-white">Services</div>
             <div class="services--wrapper">
@@ -112,18 +112,46 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+
+    <section class="contact" id="contact">
         <div class="container">
-            Contact
-            <!--			.wrapper- flex + justifycontent|space-->
+            <div class="section-title">Contact</div>
+                <div class="contact--wrapper">
+                    <img src="images/Form%20Photo.png" alt="" class="contact--img">
+                    <form action="" class="contact--form">
+                        <input type="text" placeholder="Type our name">
+                        <input type="email" placeholder="Type your e-mail">
+                        <textarea placeholder="Type your e-mail"></textarea>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span></span>
+                            I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                        </label>
+                        <button type="submit" class="btn--small btn--white--form">Send</button>
+                    </form>
+                </div>
         </div>
     </section>
 </main>
 <footer class="footer">
     <div class="container">
-        Footer
-        <!--		.logo .logo--small -->
-        <!--		nav.footer-nav-->
+        <a href="" class="logo--footer">
+            <img src="images/Icon%20Logo%20Normal.svg" alt="footer--icon" class="logo--icon">
+            <p class="logo--red">Car <span class="logo--white">sharing</span></p>
+        </a>
+        <div class="footer--wrapper">
+            <ul>
+                <li><a href="#">Home page</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Share regulation</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Our fleet</a></li>
+                <li><a href="#">Our clients</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+            <div class="copyright">Copyright © Coders Lab</div>
+        </div>
         <!--		ul>li-->
     </div>
 </footer>
